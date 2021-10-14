@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+
+/* font-family: 'Poppins', sans-serif; */
+body{
+    background-color: rgb(145, 155, 147);
+    min-height: 100vh;
+     
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    color: rgb(50, 59, 48)
+}
+h2{
+    color: rgb(141, 150, 139)
+}
+.name{
+    color:black;
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+.name:hover{
+    color: rgb(74, 90, 79);
+}
+.card{
+    background-color: white;
+    width: 85vw;
+    height: 90vh;
+    margin: 50px auto;
+    border-radius: 20px;
+
+}
+
+.side-menu{
+    width: 15vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .logo-name{
+    height: 10vh;
+    display: flex;
+    padding: 5px 60px;
+    align-items: center;
+    
+}
+.side-menu ul{
+  font-size: 24px;  
+  color: rgb(149, 148, 148);
+  justify-content: center;
+  margin-left: 50px;
+  cursor: pointer;
+  
+}
+.side-menu li{
+    font-size: 18px;
+    padding: 8px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover{
+   background-color: rgb(141, 150, 139) ;
+   color: rgb(255, 255, 255); 
+}
+.side-menu ul li img{
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+.side-menu .btnForYou ul{
+    background: rgb(141, 150, 139);
+   
+}
+
+.searchBar button img{
+    width: 40px;
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+}
+.container .header{
+    position: relative;
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    margin-top: 10px;
+}
+.container .header .navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .header .navbar .searchBar{
+    flex: 1;
+    display: flex;
+    justify-content: center;  
+}
+
+.container .header .navbar .searchBar input[type=text]{
+border: none;
+background-color: rgb(172, 185, 179);
+padding: 10px;
+width: 100%;
+margin-left: -400px;
+outline: none;
+}
+.container .header .navbar .searchBar button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(172, 185, 179);
+    cursor: pointer;
+    
+}
+.container .header .navbar .searchBar button img{
+   width: 30px; 
+   height: 30px;
+
+}
+.container .header .navbar .userProfile{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container .header .navbar .userProfile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;   
+}
+.container .header .navbar .userProfile a{
+    font-size: 18px;
+}
+.container .picContent{
+margin-top: 0vh;
+min-height: 90vh;
+margin-left: -14.5rem;
+position: relative;
+display: flex;
+flex-direction: column;
+}
+.cards .imageCase img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 33px 0px rgb(167, 135, 81);
+}
+.container .picContent .cardss{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.container .picContent .cards{
+    display: flex;
+}
+.container .picContent .cards .imageCase{
+    margin-right: 20px;
+}
+.container .picContent .cards .imageCase .picText{
+    margin-top: -30%;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.container .picContent .cards h1{
+    font-size: 18px;
+    color: rgb(5, 88, 84);
+    font-weight: 800px;
+}
+.picContent .title{
+    font-size: 20px;
+    margin-left:16px ;
+    color: rgb(12, 69, 90);
+    letter-spacing: 3px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+.picContent .picSecondContent{
+    margin-left: 40px;
+    padding: 20px;
+    margin-top: 10px;
+   
+}
+.picContent .picSecondContent .secondContent-img img{
+width: 120px;
+height: 120px;
+}
+.picSecondContent .newCard{
+    width: 250px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgb(141, 150, 139);
+    margin-left: 0px;
+    border-radius: 15px;
+    margin-right: 150px;
+    
+}
+.picSecondContent .newCard p{
+    font-size: 16px;
+    margin-left: 20px;
+    color: white;
+}
+.newCard img{
+    display: flex;
+    margin-left: -60px;
+    cursor: pointer;
+}
+.secondContent{
+    display: flex;
+    margin-bottom: 70px;
+}
+@media (min-width: 480px) and (max-width:1200px){
+    body{
+        background-color: black;
+    }
+    .card{
+        width: 90vw;
+        height: 270vh;
+    }
+    .side-menu{
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .side-menu li{
+        font-size: 15px;
+        padding: 5px 18px;
+        align-items: center;
+    }
+    .searchBar button img{
+        width: 10px;
+    }
+    .container{
+        position: relative;
+        right: -420px;
+        display: flex;
+        flex-direction: column;
+        top: -29.5rem;
+        margin: 20px;
+    }
+    .side-menu .btnForYou ul{
+        background: none;
+       
+    }
+    .cards .imageCase img {
+        width: 450px;
+        height: 150px;
+        margin-bottom: 2rem;
+    
+    }
+    .container .picContent .cards{
+        display: flex;
+        flex-direction: column;
+         
+    }
+
+    .container .header .navbar .searchBar input[type=text]{
+        margin-left: -24rem;
+        }
+    .container .header .navbar .searchBar button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .header .navbar .userProfile{
+            flex: 1;
+            margin-left: -20rem;
+        }
+        .container .header .navbar .userProfile a{
+          display: none;
+        }
+        .container .picContent .cards .imageCase .picText{
+            display: none;
+        }
+        .container .picContent .cards h1{
+            font-size: 18px;
+        }
+        .picContent .title{
+            font-size: 24px;
+        }
+        .picContent .picSecondContent{
+            margin-left: 20px;
+            padding: 20px;
+            margin-top: 5px;
+            margin-bottom: 30rem;
+
+           
+        }
+        .picContent .picSecondContent .secondContent-img img{
+        width: 140px;
+        height: 140px;
+        }
+        .picSecondContent .newCard{
+            width: 60%;
+            height: 80px;
+            border-radius: 15px;
+            margin-bottom: 5rem;
+            
+        }
+        .picSecondContent .newCard p{
+            font-size: 16px;
+            margin-left: 20px;
+            }
+        .newCard img{
+            margin-left: -15rem;
+            cursor: pointer;
+           
+        }
+        .secondContent{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+
+}
+@media (min-width: 420px) and (max-width: 768px) {
+    .cards .imageCase img {
+        width: 220px;
+        height: 200px;
+        margin-bottom: 4rem;
+    
+    }
+    .container .picContent .cards{
+        display: flex;
+        flex-direction: column;   
+    }
+    .container{
+        position: relative;
+        right: -380px;
+    }
+    .container .header .navbar .userProfile{
+        flex: 1;
+        margin-left: -50rem;
+    }
+    .container .header .navbar .searchBar input[type=text]{
+        width: 30%;
+        margin-right: 23rem;
+        }
+    .container .header .navbar .searchBar button{
+            display: flex;
+        }
+        .card{
+            width: 90vw;
+            height: 300vh;
+        }
+        .picContent .picSecondContent{
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 30rem;
+
+           
+        }
+        .picContent .picSecondContent .secondContent-img img{
+        width: 140px;
+        height: 140px;
+        }
+        .picSecondContent .newCard{
+            width: 40%;
+            height: 80px;
+            
+        }
+        .newCard img{
+            margin-left: -7rem;
+            cursor: pointer;
+           
+        }
+        .picContent .title{
+           margin: -25px;
+        }
+
+.container .header .navbar .searchBar input[type=text]{
+   display: 1;
+    }
+    .container .header .navbar .searchBar button{
+        display: none;
+        
+    }
+}
